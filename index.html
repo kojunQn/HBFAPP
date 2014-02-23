@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Default theme - jQuery Mobile Demos</title>
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.0.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+</head>
+<body>
+<div data-role="page" id="menu" data-theme="b">
+
+	<div data-role="header">
+		<h1>HBFSWI TEST</h1>
+		
+		
+	</div><!-- /header -->
+	<div class="ui-content" role="main" >
+
+		<form class="ui-mini">
+			<div class="ui-field-contain" id="theme-selector">
+				<ul data-role="listview" data-inset="true">
+				<li>Menu</li>
+				<li data-role="list-divider"></li>
+				<li><a href="#register">Registrieren</a></li>
+				<li><a href="#">Lageplan</a></li>
+			</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+	  <h1> HBFSWI TEST </h1>
+	</div>
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="register" data-theme="b">
+
+	<div data-role="header">
+		<h1>HBFSWI TEST</h1>
+		<a href="#menu" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<a href="#panel-overlay" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear">Menu</a>
+	</div><!-- /header -->
+	
+	<div class="ui-content" role="main" >
+	
+	 <div id="ui-bar-test" class="ui-bar ui-bar-b ui-corner-all" style="margin-bottom:1em;">
+		<p><center>Als Schüler registrieren</center></p>
+	 </div>
+	  <div data-demo-html="true">
+        <label for="text-basic">Name</label>
+        <input type="text" name="text-basic" id="text-name" value="">
+      </div>
+	 <div data-demo-html="true">
+        <label for="text-basic">Vorname</label>
+        <input type="text" name="text-basic" id="text-vorname" value="">
+      </div>
+	 <div data-demo-html="true">
+        <label for="date">Geburtsdatum</label>
+        <input type="date" name="date" id="gebdatum" value="">
+     </div>
+	  <div data-demo-html="true">
+        <label for="date">Geburtsort</label>
+        <input type="text" name="text-basic" id="gebort" value="">
+     </div>
+	 <div class="ui-field-contain">
+		<label for="select-choice-1" class="select">Fachrichtung</label><br><br>
+		<select name="select-choice-1" id="select-choice-1" data-native-menu="false" >
+			<option value="HBFSWI">HBFSWI</option>
+			<option value="fo">Fachoberschule</option>
+			<option value="lager">Fachlagerist</option>
+			<option value="bla">Noch äppes</option>
+		</select>
+	  </div>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+	  <h1> HBFSWI TEST </h1>
+	</div>
+	<div data-role="panel" id="panel-overlay" data-display="overlay">
+		<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close">Schliessen</a></li>
+			<li><a href="#menu">Hauptmenu</a></li>
+			<li><a href="#">Lageplan</a></li>
+			<li><a href="#">Test</a></li>
+		</ul>
+		
+	</div>
+</div><!-- /page -->
+
+
+
+</body>
+</html>
